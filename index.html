@@ -136,13 +136,34 @@
 
             <div class="tool-card">
 
-                <h3>EMI Calculator</h3>
+<h3>💰 EMI Calculator</h3>
 
-                <p>
-                    Coming in Version 2.1
-                </p>
+<p>Calculate your monthly loan EMI.</p>
 
-            </div>
+<input
+type="number"
+id="principal"
+placeholder="Loan Amount">
+
+<input
+type="number"
+id="rate"
+placeholder="Annual Interest Rate (%)">
+
+<input
+type="number"
+id="years"
+placeholder="Loan Tenure (Years)">
+
+<button onclick="calculateEMI()">
+
+Calculate EMI
+
+</button>
+
+<h3 id="emiResult"></h3>
+
+</div>
 
             <div class="tool-card">
 
