@@ -1,101 +1,201 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Finance Toolkit</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>CA Finance Toolkit</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
+    <!-- Navigation -->
 
-<h2>CA Finance Toolkit</h2>
+    <nav>
 
-<ul>
+        <div class="logo">
+            🧾 CA Finance Toolkit
+        </div>
 
-<li>GST</li>
+        <ul>
+            <li><a href="#gst">GST</a></li>
+            <li><a href="#finance">Finance</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://github.com/shaibanansari/-ca-finance-toolkit" target="_blank">GitHub</a></li>
+        </ul>
 
-<li>Finance</li>
+    </nav>
 
-<li>Tax</li>
+    <!-- Hero Section -->
 
-<li>Power BI</li>
+    <header class="hero">
 
-</ul>
+        <h1>Finance Tools Built for Chartered Accountants</h1>
 
-</nav>
+        <p>
+            An open-source collection of practical finance,
+            GST and taxation calculators for students,
+            professionals and businesses.
+        </p>
 
-<header>
+        <a href="#gst" class="hero-btn">
+            🚀 Start Calculating
+        </a>
 
-<h1>Open-Source Finance Toolkit</h1>
+    </header>
 
-<p>
-Finance calculators and utilities for
-students, Chartered Accountants and businesses.
-</p>
+    <!-- Statistics -->
 
-</header>
+    <section class="stats">
 
-<section>
+        <div class="stat-card">
+            <h2>2</h2>
+            <p>Working Calculators</p>
+        </div>
 
-<h2>GST Tools</h2>
+        <div class="stat-card">
+            <h2>100%</h2>
+            <p>Open Source</p>
+        </div>
 
-<div>
+        <div class="stat-card">
+            <h2>v2.0</h2>
+            <p>Current Version</p>
+        </div>
 
-<h3>GST Interest Calculator</h3>
+    </section>
 
-<p>Calculate interest payable on delayed GST payments.</p>
+    <!-- GST -->
 
-</div>
+    <section id="gst">
 
-<div>
+        <h2>🧾 GST Tools</h2>
 
-<h3>GST Late Fee Calculator</h3>
+        <div class="tool-grid">
 
-<p>Estimate late fees for delayed GST return filing.</p>
+            <div class="tool-card">
 
-</div>
+                <h3>GST Interest Calculator</h3>
 
-</section>
+                <p>
+                    Calculate interest payable on delayed GST payments.
+                </p>
 
-<section>
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="GST Amount">
 
-<h2>Finance Tools</h2>
+                <input
+                    type="number"
+                    id="days"
+                    placeholder="Delay (Days)">
 
-<div>
+                <button onclick="calculateInterest()">
+                    Calculate Interest
+                </button>
 
-<h3>EMI Calculator</h3>
+                <h3 id="interestResult"></h3>
 
-<p>Coming Soon</p>
+            </div>
 
-</div>
+            <div class="tool-card">
 
-<div>
+                <h3>GST Late Fee Calculator</h3>
 
-<h3>Financial Ratio Calculator</h3>
+                <p>
+                    Estimate late fees for delayed GST return filing.
+                </p>
 
-<p>Coming Soon</p>
+                <input
+                    type="number"
+                    id="lateDays"
+                    placeholder="Delay (Days)">
 
-</div>
+                <button onclick="calculateLateFee()">
+                    Calculate Late Fee
+                </button>
 
-</section>
+                <h3 id="lateFeeResult"></h3>
 
-<footer>
+            </div>
 
-<p>Made with ❤️ by Shaiban Ansari</p>
+        </div>
 
-</footer>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Finance -->
+
+    <section id="finance">
+
+        <h2>💰 Finance Tools</h2>
+
+        <div class="tool-grid">
+
+            <div class="tool-card">
+
+                <h3>EMI Calculator</h3>
+
+                <p>
+                    Coming in Version 2.1
+                </p>
+
+            </div>
+
+            <div class="tool-card">
+
+                <h3>Financial Ratio Calculator</h3>
+
+                <p>
+                    Coming in Version 2.1
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>About This Project</h2>
+
+        <p>
+
+            CA Finance Toolkit is an open-source project
+            created to simplify everyday finance,
+            GST and taxation calculations.
+
+            The goal is to provide free,
+            easy-to-use tools for Chartered Accountants,
+            finance professionals,
+            business owners and students.
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>CA Finance Toolkit</h2>
+
+        <p>
+            Built with ❤️ by Shaiban Ansari
+        </p>
+
+        <p>
+            Version 2.0
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
